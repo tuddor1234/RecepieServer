@@ -1,0 +1,7 @@
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\RecepieServer.exe
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\RecepieServer.dll
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\RecepieServer.deps.json
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\RecepieServer.runtimeconfig.json
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Release\netcoreapp3.1\PubTmp\Out\RecepieServer.pdb
