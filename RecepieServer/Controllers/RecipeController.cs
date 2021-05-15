@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -40,7 +41,11 @@ namespace RecepieServer.Controllers
 
             string path = Directory.GetCurrentDirectory();
             string outpath = Path.Combine(path, "Recipes", $"{recipe.ID}","recipe.xml");
-            return outpath;
+            XDocument file = XDocument.Load(outpath);
+            if(file == null)
+                return NotFound();
+
+            return file.ToString();
         }
 
         // POST api/<RecipeController>

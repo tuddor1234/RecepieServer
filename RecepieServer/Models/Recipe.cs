@@ -15,6 +15,7 @@ namespace RecepieServer
         {
             ID = idCounter++;
             CreateNewXMLFile();
+            // @TODO update the file
         }
 
         public Recipe(long id, string name)
