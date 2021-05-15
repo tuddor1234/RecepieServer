@@ -45,7 +45,7 @@ namespace RecepieServer.Controllers
             if(file == null)
                 return NotFound();
 
-            return file.ToString();
+            return "<?xml version=1.0 encoding=utf - 8?>\n" + file.ToString();
         }
 
         // POST api/<RecipeController>
