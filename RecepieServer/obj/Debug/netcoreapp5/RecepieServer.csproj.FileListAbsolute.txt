@@ -1,0 +1,6 @@
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.csprojAssemblyReference.cache
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.AssemblyInfoInputs.cache
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.AssemblyInfo.cs
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.csproj.CoreCompileInputs.cache
+E:\Projects\_.NET\Server\RecepieServer\RecepieServer\obj\Debug\netcoreapp5\RecepieServer.MvcApplicationPartsAssemblyInfo.cache
