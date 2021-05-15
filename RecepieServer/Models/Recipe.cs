@@ -35,6 +35,7 @@ namespace RecepieServer
             XDocument doc = new XDocument(
                 new XComment("This is a test for a recipe"),
                 new XElement("Recipe",
+  
                     new XElement("Text", "THIS IS RANDOM TEXT 1"),
                     new XElement("Image", "https://tinyurl.com/5bc6r2z5"),
                     new XElement("Text", "THIS IS RANDOM TEXT 2"),
