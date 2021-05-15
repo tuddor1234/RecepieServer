@@ -2,6 +2,7 @@
 using RecepieServer.Repository;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -30,14 +31,16 @@ namespace RecepieServer.Controllers
 
         // GET api/<RecipeController>/5
         [HttpGet("{id}")]
-        public ActionResult<Recipe> Get(long id)
+        public ActionResult<string> Get(long id)
         {
             var recipe = repository.GetRecipeByID(id);
 
             if (recipe == null)
                 return NotFound();
 
-            return recipe;
+            string path = Directory.GetCurrentDirectory();
+            string outpath = Path.Combine(path, "Recipes", $"{recipe.ID}","recipe.xml");
+            return outpath;
         }
 
         // POST api/<RecipeController>
