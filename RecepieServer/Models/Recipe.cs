@@ -10,20 +10,25 @@ namespace RecepieServer
 { 
     public class Recipe
     {
+        static long idCounter =  0;
         public Recipe()
         {
-            ID = Guid.NewGuid();
-
-
+            ID = idCounter++;
             CreateNewXMLFile();
         }
 
+        public Recipe(long id, string name)
+        {
+            ID = id;
+            Name = name;
+        }
+
         public string Name { get; set; }
-        public Guid ID { get;  }
+        public long ID { get;  }
 
         void CreateNewXMLFile()
         {
-            string currentPath = $"Recipies/{ID}";
+            string currentPath = $"Recipes/{ID}";
             System.IO.Directory.CreateDirectory(currentPath);
 
             XDocument doc = new XDocument(

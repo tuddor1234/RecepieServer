@@ -30,7 +30,7 @@ namespace RecepieServer.Controllers
 
         // GET api/<RecipeController>/5
         [HttpGet("{id}")]
-        public ActionResult<Recipe> Get(Guid id)
+        public ActionResult<Recipe> Get(long id)
         {
             var recipe = repository.GetRecipeByID(id);
 
