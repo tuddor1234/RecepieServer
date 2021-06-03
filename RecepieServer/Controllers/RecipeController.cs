@@ -52,21 +52,21 @@ namespace RecepieServer.Controllers
         [HttpPost]
         public void Post([FromBody] Recipe model)
         {
-        
+            throw new NotImplementedException();
         }
 
         // PUT api/<RecipeController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
-
+            throw new NotImplementedException();
         }
 
         // DELETE api/<RecipeController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

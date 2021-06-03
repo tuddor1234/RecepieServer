@@ -25,7 +25,7 @@ namespace RecepieServer
         }
 
         public string Name { get; set; }
-        public long ID { get;  }
+        public long ID { get; set; }
 
         void CreateNewXMLFile()
         {

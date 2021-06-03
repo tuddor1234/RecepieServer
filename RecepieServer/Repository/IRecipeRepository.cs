@@ -58,9 +58,10 @@ namespace RecepieServer.Repository
 
         void CreateSomeRandomRecipes()
         {
+            int index = 0;
             foreach (var name in names)
             {
-                recipes.Add(new Recipe() { Name = name });
+                recipes.Add(new Recipe() { Name = name, ID = index++ }) ;
             }
         }
 
