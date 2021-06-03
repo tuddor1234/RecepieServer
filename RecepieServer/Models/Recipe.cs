@@ -22,6 +22,7 @@ namespace RecepieServer
         {
             ID = id;
             Name = name;
+            CreateNewXMLFile();
         }
 
         public string Name { get; set; }
