@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--This is a test for a recipe-->
+<Recipe>
+  <Text>THIS IS RANDOM TEXT 1</Text>
+  <Image>https://miro.medium.com/max/2320/1*t_G1kZwKv0p2arQCgYG7IQ.gif</Image>
+  <Text>THIS IS RANDOM TEXT 2</Text>
+  <Image>https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg</Image>
+  <Text>THIS IS RANDOM TEXT 3</Text>
+</Recipe>

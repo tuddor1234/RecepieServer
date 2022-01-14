@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c/gM8D7z29cWbWeqLoSHadIPEYWBGs4BOmdDQb9PZvNP4J0ZdrCUPHSQRNOIisLrfc8hfeGsQryPWuWJf5Q5hA==",
+  "dgSpecHash": "zCBIkpAcefNR7rb94gZfrf4i+fyK7LxhECPRpD4BrqLwrl50ytMsXd0g9Y7SN9QGBCCF15FxP4imJP9WUnYZUg==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\_.NET\\Server\\RecepieServer\\RecepieServer\\RecepieServer.csproj",
+  "projectFilePath": "E:\\Extra\\Tudor\\Projects\\RecipeNotebook\\Server\\RecepieServer\\RecepieServer\\RecepieServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
