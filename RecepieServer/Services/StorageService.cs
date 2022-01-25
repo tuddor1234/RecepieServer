@@ -43,7 +43,7 @@ namespace RecepieServer.Services
      
         //    blobClient.Upload(file,true);
         //}
-        public void UploadRecipe(FileStream file,long id)
+        public void UploadRecipe(Stream file,long id)
         {
             var connectionString = _configuration.GetSection("Storage:ConnectionString").Value;
             var blobContainerName = _configuration.GetSection("Storage:ContainerName").Value;
@@ -84,7 +84,7 @@ namespace RecepieServer.Services
             blobClient.Upload(stream, true);
         }
 
-        public void UploadPicture(FileStream file, long id, string fileName)
+        public void UploadPicture(Stream file, long id, string fileName)
         {
             var connectionString = _configuration.GetSection("Storage:ConnectionString").Value;
             var blobContainerName = _configuration.GetSection("Storage:ContainerName").Value;
@@ -114,6 +114,15 @@ namespace RecepieServer.Services
                 return null;
 
             return blobClient.DownloadContent().Value.Content.ToStream();
+        }
+
+        public void Delete(long id)
+        {
+            var connectionString = _configuration.GetSection("Storage:ConnectionString").Value;
+            var blobContainerName = _configuration.GetSection("Storage:ContainerName").Value;
+            string path = $"Recipes/{id}/";
+            BlobClient blobClient = new BlobClient(connectionString, blobContainerName, path);
+            blobClient.DeleteIfExists();
         }
     }
 }

@@ -13,7 +13,9 @@ namespace RecepieServer
         public string Name { get; set; }
         [XmlElement]
         public long ID { get; set; }
-      
+        [XmlElement]
+        public string Thumbnail { get; set; }
+
         static long idCounter =  0;
     }
 
@@ -25,35 +27,14 @@ namespace RecepieServer
         {
             ID = idCounter++;
             Name = name;
+            Thumbnail = "default.jpg";
         }
 
         public Recipe(long id, string name)
         {
             ID = id;
             Name = name;
-        }
-
-
-        public void Save()
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Recipe));
-
-            var DirPath = $"Recipes/{ID}";
-            if (!Directory.Exists(DirPath))
-            {
-                Directory.CreateDirectory(DirPath);
-            }
-
-            var FilePath = DirPath + "/recipe.xml";
-           
-            //@TODO SWITCH TO DETAILS
-            FileStream file = File.Open(FilePath,FileMode.OpenOrCreate);
-            serializer.Serialize(file,this);   
-        }
-
-        public void Load()
-        {
-
+            Thumbnail = "default.jpg";
         }
     }
 }

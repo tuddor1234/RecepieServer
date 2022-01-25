@@ -50,19 +50,19 @@ namespace RecepieServer.Controllers
             return details;
         }
 
-        [HttpGet("{id}/img/{path}")]
-        public ActionResult<byte[]> Get(long id,string path)
-        {
-            var recipe = _repository.GetRecipeByID(id);
-            if (recipe == null)
-                return NotFound();
+        //[HttpGet("{id}/img/{path}")]
+        //public ActionResult<byte[]> Get(long id,string path)
+        //{
+        //    var recipe = _repository.GetRecipeByID(id);
+        //    if (recipe == null)
+        //        return NotFound();
 
-            var resource = _repository.GetResourceForRecipe(id, path);
-            if (resource == null)
-                return NotFound();
+        //    var resource = _repository.GetResourceForRecipe(id, path);
+        //    if (resource == null)
+        //        return NotFound();
 
-            return resource.Result;
-        }
+        //    return resource.Result;
+        //}
         // POST api/<RecipeController>
         // WE USE THIS ROUTE TO UPLOAD PICTURES
         [HttpPost]
@@ -75,23 +75,26 @@ namespace RecepieServer.Controllers
 
         [HttpPost]
         [Route("{id}")]
-        public void Post(long id,RecipeDetails recipe)
+        public IActionResult Post(long id,RecipeDetails recipe)
         {
             throw new NotImplementedException();
+            return Ok();
         }
 
+        //MIGHT NOT NEED THIS
         // PUT api/<RecipeController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-            throw new NotImplementedException();
-        }
+        //[HttpPut("{id}")]
+        //public void Put(int id, RecipeDetails recipe)
+        //{
+            
+        //    throw new NotImplementedException();
+        //}
 
         // DELETE api/<RecipeController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(long id)
         {
-            throw new NotImplementedException();
+            _storage.Delete(id);
         }
     }
 }

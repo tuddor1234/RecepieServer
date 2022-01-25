@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RecipeDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <recipe>
+    <Name>Tarta</Name>
+    <ID>2</ID>
+    <Thumbnail>2.jpg</Thumbnail>
+  </recipe>
+  <Instructions>
+    <Instruction>
+      <type>Image</type>
+      <data>1.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>e</type>
+      <data>4.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>e</type>
+      <data>4.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>

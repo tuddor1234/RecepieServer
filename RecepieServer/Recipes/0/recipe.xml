@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<RecipeDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <recipe>
+    <Name>Tort</Name>
+    <ID>0</ID>
+    <Thumbnail>1.jpg</Thumbnail>
+  </recipe>
+  <Instructions>
+    <Instruction>
+      <type>Image</type>
+      <data>2.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>e</type>
+      <data>0.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>Instruction>
+    <Instruction>
+      <type>Image</type>
+      <data>2.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>nstruction>
+  </Instructions>
+</RecipeDetails>

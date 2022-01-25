@@ -21,28 +21,29 @@ namespace RecepieServer.Controllers
             foreach (var name in names)
             {
                 var NewRecipe = new Recipe(name);
+                var value = new Random().Next(3);
+                string img = value == 0 ? "default.jpg" : $"{value}.jpg";
+                NewRecipe.Thumbnail = img;
+
                 Recipes.Add(NewRecipe);
                 RecipeDetailsController.CreateRandomDetails(_storageService , NewRecipe);
+
+                _storageService.Delete(NewRecipe.ID);
+
+                FileStream thumbnail = File.OpenRead($"Resources/Images/Thumbnails/{NewRecipe.Thumbnail}");
+                thumbnail.Position = 0;
+                _storageService.UploadPicture(thumbnail, NewRecipe.ID, NewRecipe.Thumbnail);
+                thumbnail.Close();
             }
 
-            var DirPath = "Recipes";
-            if (!Directory.Exists(DirPath))
-            {
-                Directory.CreateDirectory(DirPath);
-            }
-
-            var FilePath = DirPath + "/AllRecipes.xml";
-            
-            FileStream file = File.Open(FilePath, FileMode.OpenOrCreate);
+            Stream recipe = new MemoryStream();
             XmlSerializer serializer = new XmlSerializer(typeof(List<Recipe>));
-            serializer.Serialize(file, Recipes);
+            serializer.Serialize(recipe, Recipes);
 
-            file.Position = 0;
-            _storageService.UploadRecipe(file);
-            
-            file.Close();
+            recipe.Position = 0;
+            _storageService.UploadRecipe(recipe);
 
-            Directory.Delete(DirPath,true);
+            recipe.Dispose();
         }
 
     }

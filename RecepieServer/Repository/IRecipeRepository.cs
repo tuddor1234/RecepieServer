@@ -19,8 +19,6 @@ namespace RecepieServer.Repository
         IEnumerable<Recipe> GetAllRecipes();
 
         RecipeDetails GetRecipeDetails(Recipe recipe);
-
-        Task<byte[]> GetResourceForRecipe(long id, string resource);
     }
 
     public class RecipeRepo : IRecipeRepository
@@ -53,12 +51,6 @@ namespace RecepieServer.Repository
         public void PostRecipe()
         {
 
-        }
-
-   
-        public Task<byte[]> GetResourceForRecipe(long id, string resource)
-        {
-            return RecipeDetailsController.GetResource(id, resource);
         }
 
 

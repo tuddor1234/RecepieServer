@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RecipeDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <recipe>
+    <Name>Ceva cu fructe</Name>
+    <ID>3</ID>
+    <Thumbnail>1.jpg</Thumbnail>
+  </recipe>
+  <Instructions>
+    <Instruction>
+      <type>Image</type>
+      <data>1.jpg</data>
+    </Instruction>
+    <Instruction>
+      <type>Image</type>
+      <data>2.jpg</data>
+    </Instruction>
+    <Instruction>
+      <type>Image</type>
+      <data>2.jpg</data>
+    </Instruction>
+  </Instructions>
+</RecipeDetails>tails>
